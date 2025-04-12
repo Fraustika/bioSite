@@ -6,6 +6,8 @@
  </head>
 <body>
 
+<li><a href="Akimov_bioSite.html">The Bio Site</a></li>
+
 <h1>CSD 340 Web Development with HTML and CSS</h1>
 
 <h2>Contributors</h2>
