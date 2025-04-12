@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position:fixed;
+    background-color: #394d70;
+    color: white;
+    padding: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Set to a value less than 100% */
+    margin: 0 auto; /* This centers the header */
+    border-radius: 15px; /* Keeps the rounded corners */
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 15px; /* Adjust this value to make the text smaller or larger */
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 20px; /* Optional: adds some space from the left */
+}
+
+
+.intro {
+    font-size: 23px;
+    margin-left: 550px;
+    line-height: 1.5; /* Sets the line spacing to 1.5 */
+    text-indent: 20px; /* Adjust the value to set the indent size */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; 
+    color: #2b3e5e;
+    text-align: left; /* Aligns text to the left */
+    margin-left: 550px; /* Adjust the value to move it more to the left */
+    margin-top: 140px; /* Adjust this value to lower the text */
+}
+
+h3 {
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-weight: bold; /* Optional */
+}
+
+nav {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    font-size: 15px; /* Same font size as h1 */
+    font-family: Arial, sans-serif; /* Same font family as h1 */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+.main-content {
+    margin-bottom: 50px; /* Adjust this value to match the footer height */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c7cdd9;
+    color: white;
+    position: fixed; /* Keeps the footer fixed at the bottom */
+    bottom: 0; /* Aligns the footer to the bottom of the viewport */
+    left: 0; /* Aligns the footer to the left edge */
+    width: 100%; /* Makes the footer span the full width */
+}
+
+nav ul li a {
+    color: white; /* This sets the text color to white */
+    text-decoration: none; /* Optional: removes the underline from links */
+}
+
+.styled-button {
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #394d70; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin-left: 160px;
+    width: 200px; /* Set the width of the button */
+}
+
+.styled-button:hover {
+    opacity: 0.8; /* Slightly change opacity on hover */
+}
