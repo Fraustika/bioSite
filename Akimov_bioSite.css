@@ -36,7 +36,13 @@ h1 {
 h2 {
     font-family: Arial, sans-serif;
     color: #2b3e5e;
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+    text-align: left; /* Aligns text to the left */
+    margin-left: 550px; /* Adjust the value to move it more to the left */
+    margin-top: 40px; /* Adjust this value to lower the text */
+>>>>>>> cb90aeac39ba01121b2ec52127dac0abc19ace00
 }
 
 h3 {
@@ -101,6 +107,7 @@ footer {
     margin: 15px 0;
 }
 
+<<<<<<< HEAD
 .styled-button:hover { opacity: 0.8; }
 
 .button-container {
@@ -149,3 +156,8 @@ footer {
     }
     .intro { margin-left: 0; }
 }
+=======
+.styled-button:hover {
+    opacity: 0.8; /* Slightly change opacity on hover */
+}
+>>>>>>> cb90aeac39ba01121b2ec52127dac0abc19ace00
