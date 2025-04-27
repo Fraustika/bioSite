@@ -1,60 +1,64 @@
+/* ---------- Base reset ---------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* ---------- Header ---------- */
 header {
-    position:fixed;
+    position: fixed;
     background-color: #394d70;
     color: white;
     padding: 10px 0;
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center items vertically */
-    width: 100%; /* Set to a value less than 100% */
-    margin: 0 auto; /* This centers the header */
-    border-radius: 15px; /* Keeps the rounded corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
     z-index: 1000;
 }
 
 h1 {
-    font-size: 15px; /* Adjust this value to make the text smaller or larger */
-    text-align: left; /* Aligns the text to the left */
-    margin-left: 20px; /* Optional: adds some space from the left */
+    font-size: 15px;
+    margin-left: 20px;
 }
 
-
+/* ---------- Bio intro (index page) ---------- */
 .intro {
     font-size: 23px;
     margin-left: 550px;
-    line-height: 1.5; /* Sets the line spacing to 1.5 */
-    text-indent: 20px; /* Adjust the value to set the indent size */
+    line-height: 1.5;
+    text-indent: 20px;
 }
 
+/* ---------- Headings ---------- */
 h2 {
-    font-family: 'Arial', sans-serif; 
+    font-family: Arial, sans-serif;
     color: #2b3e5e;
-    text-align: left; /* Aligns text to the left */
-    margin-left: 550px; /* Adjust the value to move it more to the left */
-    margin-top: 140px; /* Adjust this value to lower the text */
+    margin-top: 20px;
 }
 
 h3 {
-    font-size: 1.5em; /* Adjust the size as needed */
-    font-weight: bold; /* Optional */
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
+h4 {
+    font-family: Arial, sans-serif;
+    color: #2b3e5e;
+    margin-top: 70px;
+}
+
+/* ---------- Navigation ---------- */
 nav {
-    list-style-type: none;
-    padding: 0;
-    color: white;
-    font-size: 15px; /* Same font size as h1 */
-    font-family: Arial, sans-serif; /* Same font family as h1 */
+    font-size: 15px;
+    font-family: Arial, sans-serif;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0 20px 0 0;
     padding: 0;
 }
 
@@ -63,11 +67,14 @@ nav ul li {
     margin: 0 15px;
 }
 
-main {
-    padding: 20px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
-.main-content {
-    margin-bottom: 50px; /* Adjust this value to match the footer height */
+
+/* ---------- Main / footer ---------- */
+main {
+    padding: 90px 20px 70px;      /* top padding offsets fixed header */
 }
 
 footer {
@@ -75,32 +82,70 @@ footer {
     padding: 10px 0;
     background-color: #c7cdd9;
     color: white;
-    position: fixed; /* Keeps the footer fixed at the bottom */
-    bottom: 0; /* Aligns the footer to the bottom of the viewport */
-    left: 0; /* Aligns the footer to the left edge */
-    width: 100%; /* Makes the footer span the full width */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-nav ul li a {
-    color: white; /* This sets the text color to white */
-    text-decoration: none; /* Optional: removes the underline from links */
-}
-
+/* ---------- Buttons ---------- */
 .styled-button {
-    display: block;
+    background-color: #394d70;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
     margin: 15px 0;
-    padding: 10px;
-    background-color: #394d70; /* Button background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 25px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for size */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    margin-left: 160px;
-    width: 200px; /* Set the width of the button */
 }
 
-.styled-button:hover {
-    opacity: 0.8; /* Slightly change opacity on hover */
+.styled-button:hover { opacity: 0.8; }
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+.content-block {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;          /* stacks on small screens */
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* text column (now with â€œsidebarâ€ look) */
+.content-block .text {
+    flex: 1 1 26rem;          /* grows, min ~420 px */
+    background-color: #f4f4f4;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+
+/* photo column */
+.content-block img {
+    flex: 0 1 22rem;         
+    max-width: 40vw;          
+    min-width: 16rem;         
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+
+@media (max-width: 768px) {
+    .content-block { flex-direction: column; }
+    .content-block img,
+    .content-block .text {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .intro { margin-left: 0; }
 }
