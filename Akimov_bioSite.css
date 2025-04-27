@@ -37,20 +37,11 @@ h2 {
     font-family: Arial, sans-serif;
     color: #2b3e5e;
     margin-top: 20px;
-    text-align: left; /* Aligns text to the left */
-    margin-left: 550px; /* Adjust the value to move it more to the left */
-    margin-top: 40px; /* Adjust this value to lower the text */
 }
 
 h3 {
     font-size: 1.5em;
     font-weight: bold;
-}
-
-h4 {
-    font-family: Arial, sans-serif;
-    color: #2b3e5e;
-    margin-top: 70px;
 }
 
 /* ---------- Navigation ---------- */
@@ -159,7 +150,3 @@ footer li {
     }
     .intro { margin-left: 0; }
 }
-.styled-button:hover {
-    opacity: 0.8; /* Slightly change opacity on hover */
-}
- 
