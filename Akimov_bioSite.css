@@ -36,13 +36,10 @@ h1 {
 h2 {
     font-family: Arial, sans-serif;
     color: #2b3e5e;
-<<<<<<< HEAD
     margin-top: 20px;
-=======
     text-align: left; /* Aligns text to the left */
     margin-left: 550px; /* Adjust the value to move it more to the left */
     margin-top: 40px; /* Adjust this value to lower the text */
->>>>>>> cb90aeac39ba01121b2ec52127dac0abc19ace00
 }
 
 h3 {
@@ -85,15 +82,22 @@ main {
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: #c7cdd9;
     color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+  
 }
-
+footer li {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+}
 /* ---------- Buttons ---------- */
 .styled-button {
     background-color: #394d70;
@@ -107,7 +111,6 @@ footer {
     margin: 15px 0;
 }
 
-<<<<<<< HEAD
 .styled-button:hover { opacity: 0.8; }
 
 .button-container {
@@ -156,8 +159,6 @@ footer {
     }
     .intro { margin-left: 0; }
 }
-=======
 .styled-button:hover {
     opacity: 0.8; /* Slightly change opacity on hover */
 }
->>>>>>> cb90aeac39ba01121b2ec52127dac0abc19ace00
